@@ -138,7 +138,7 @@ VIDEO_CODE_5 = p("fgh.MP4")
 
 # ✅ EXTRA MEDIA (NOT deleted)
 PHOTO_AFTER_PHOTOTRAP = p("vbn.jpg")
-VIDEO_DURING_WAIT30 = p("jkl.mp4")
+VIDEO_DURING_WAIT30 = p("jkl.MP4")
 
 # ✅ TIMER 60 SEC (video starts together with timer)
 VIDEO_DURING_WAIT60 = p("plm.mp4")   # starts with timer
@@ -397,7 +397,7 @@ def photo_handler(message):
             try:
                 send_video_block(chat_id, VIDEO_DURING_WAIT30, "Поки чекаєш… 🤍", B_WAIT30_MEDIA)
             except:
-                send_block(chat_id, "⚠️ Не знайшов jkl.mp4", B_WAIT30)
+                send_block(chat_id, "⚠️ Не знайшов jkl.MP4", B_WAIT30)
 
             send_block(chat_id, "⏳ Наступний рівень через 30 секунд…", B_WAIT30)
             threading.Thread(target=wait_unlock_30, args=(chat_id,), daemon=True).start()
